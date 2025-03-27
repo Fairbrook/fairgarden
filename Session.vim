@@ -24,9 +24,8 @@ badd +1 content/index.md
 argglobal
 %argdel
 $argadd ~/Documents/projects/quartz
-edit content
+edit content/index.md
 argglobal
-balt content/index.md
 setlocal fdm=manual
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -56,6 +55,7 @@ if filereadable(s:sx)
   exe "source " . fnameescape(s:sx)
 endif
 let &g:so = s:so_save | let &g:siso = s:siso_save
+nohlsearch
 let g:this_session = v:this_session
 let g:this_obsession = v:this_session
 doautoall SessionLoadPost
