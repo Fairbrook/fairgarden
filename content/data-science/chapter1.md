@@ -137,12 +137,12 @@ Is the frequency divided by the sample size
 ### Steam and leaf plot
 Each item in the sample is divided into two parts: a steam, consisting of the leftmost one or two digits, and the leaf, which consists of the next digit
 
-![steam and leaf plot](./static/steam-leaf-plot.png)
+![steam and leaf plot](./data-science/imgs/steam-leaf-plot.png)
 
 ### Dotplots
 Can be used to give a rough impression of the shape of a sample. Useful when the sample size is not too large
 
-![dotplot](./static/dotplot.png)
+![dotplot](./data-science/imgs/dotplot.png)
 
 ### Histogram
 Graphic that gives an idea of the "shape" of a sample, indicating regions where sample points are concentrated and regions were they are sparse
@@ -150,33 +150,33 @@ Graphic that gives an idea of the "shape" of a sample, indicating regions where 
 #### Frequency table
 Table with class-intervals in the left-hand column which divide the sample into groups, usually with the same width. Next they have the frequency, the relative frequency (frequency/sample size) and the density (relative frequency/interval width)
 
-![frequency table](./static/frequency-table.png)
+![frequency table](./data-science/imgs/frequency-table.png)
 
 #### Chart
 The x axis denotes the classes and the y could be the frequency, relative frequency or density when all the classes are the same width, however, if any class has a different width, the density is need to be used
 
-![histogram](./static/histogram.png)
+![histogram](./data-science/imgs/histogram.png)
 
 #### Symmetry
 A histogram is symmetric if its right half is a mirror image of its left half
 
-![symmetry](./static/symmetry.png)
+![symmetry](./data-science/imgs/symmetry.png)
 
 #### Skewness
 A histogram that is not symmetric is skewed
 
 Could be left skewed
 
-![left](./static/left.png)
+![left](./data-science/imgs/left.png)
 
 Or right skewed
 
-![right](./static/right.png)
+![right](./data-science/imgs/right.png)
 
 ## Boxplots
 Graphic that represents the median, the first and third quartiles, and any outliers that are present in a sample
 
-![IQR](./static/iqr.png)
+![IQR](./data-science/imgs/iqr.png)
 
 ### Interquartile Range
 The interquartile range is the difference between the third quartile and the first quartile
