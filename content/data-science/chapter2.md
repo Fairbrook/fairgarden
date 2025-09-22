@@ -68,7 +68,7 @@ Given any experiment and any event A:
 ## 2.2 Counting Methods
 Fundamental Principle of Counting
 
-k operations are to be performed. If there are n1​ ways to perform the first operation, and if for each of these ways there are n2​ ways to perform the second operation, and if for each choice of ways to perform the first two operations there are n3​ ways to perform the third operation, the total number of ways to perform the sequence of k operations is n1​n2​⋯nk​
+$$k$$ operations are to be performed. If there are $$n_1$$ ways to perform the first operation, and if for each of these ways there are $$n_2$$ ways to perform the second operation, and if for each choice of ways to perform the first two operations there are $$n_3$$ ways to perform the third operation, the total number of ways to perform the sequence of $$k$$ operations is $$n_1, n_2 \cdots n_k$$
 
 ### Permutations
 
@@ -77,16 +77,28 @@ Ordering of a collection of objects.
 The number of permutations of n objects is
 n!
 
-The number of permutations of k objects chosen from a group of n objecs is
-(n−k)!n!​
+The number of permutations of $$k$$ objects chosen from a group of $$n$$ objecs is
+$$
+(n−k)!n!
+$$
 
 ### Combinations
 
 Choosing groups of objects that can be selected without regard to order
-(nk​)=k!(n−k)!n!​
+$$
+\start{bmatrix}
+n\\
+k
+\end{bmatrix}
+=
+\frac{n!}{k!(n-k)!}
+$$
 
-The number of ways of dividing a group of n objects into groups of k1​,...,kr​ where k1​+⋯+kr​=n is
-k1​!⋯kr​!n!​
+The number of ways of dividing a group of n objects into groups of $$ k_1,\cdots,k_r$$ where $$ k_1 + \cdots + k_r = n $$ is
+
+$$
+\frac{n!}{k_1!\cdotsk_r!}
+$$
 
 
 ## 2.3 Conditional Probability and Independence
