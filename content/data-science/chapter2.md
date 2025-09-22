@@ -63,7 +63,7 @@ Given any experiment and any event A:
 - $$ P(A^c) = 1 - P(A) $$
 - $$ P(\emptyset) = 0 $$
 - $$ P(A) = \frac{k}{N} $$
-- $$ P(A \union B) = P(A) + P(B) - P(A \intersection B) $$
+- $$ P(A \cup B) = P(A) + P(B) - P(A \cap B) $$
 
 ## 2.2 Counting Methods
 Fundamental Principle of Counting
@@ -74,12 +74,14 @@ $$k$$ operations are to be performed. If there are $$n_1$$ ways to perform the f
 
 Ordering of a collection of objects.
 
-The number of permutations of n objects is
+The number of permutations of $$n$$ objects is
+$$
 n!
+$$
 
 The number of permutations of $$k$$ objects chosen from a group of $$n$$ objecs is
 $$
-(n−k)!n!
+\frack{n!}{(n−k)!}
 $$
 
 ### Combinations
@@ -97,7 +99,7 @@ $$
 The number of ways of dividing a group of n objects into groups of $$ k_1,\cdots,k_r$$ where $$ k_1 + \cdots + k_r = n $$ is
 
 $$
-\frac{n!}{k_1!\cdotsk_r!}
+\frac{n!}{k_1! \cdots k_r!}
 $$
 
 
