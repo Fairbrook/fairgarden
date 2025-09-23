@@ -152,7 +152,7 @@ $$
 If $$A_1, \cdots , A_n$$ are mutually exclusive and exhaustive events, and $$ B $$ is any event, then
 
 $$
-P(B) = P(A_1 \cap B) + \cdots + P(A_n \caps B)
+P(B) = P(A_1 \cap B) + \cdots + P(A_n \cap B)
 $$
 
 Equivalently
@@ -212,13 +212,13 @@ Let $$X$$ be a discrete random variable with probability mass function $$p(x)=P(
 
 - The variance of X is given by
 $$
-\+sigma_X^2 = \sum_{x}{(x-\mu)^2P(X=x)}
+\sigma_X^2 = \sum_{x}{(x-\mu)^2P(X=x)}
 $$
 
 - An alternative formula for the variance is given by
 
 $$
-\+sigma_X^2 = \sum_{x}{x^2P(X=x)-\mu_X^2}
+\sigma_X^2 = \sum_{x}{x^2P(X=x)-\mu_X^2}
 $$
 
 - The standard deviation is the square root of the variance 
