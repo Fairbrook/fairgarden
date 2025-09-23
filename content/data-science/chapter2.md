@@ -81,17 +81,17 @@ $$
 
 The number of permutations of $$k$$ objects chosen from a group of $$n$$ objecs is
 $$
-\frack{n!}{(n−k)!}
+\frac{n!}{(n−k)!}
 $$
 
 ### Combinations
 
 Choosing groups of objects that can be selected without regard to order
 $$
-\start{bmatrix}
+\begin{pmatrix}
 n\\
 k
-\end{bmatrix}
+\end{pmatrix}
 =
 \frac{n!}{k!(n-k)!}
 $$
@@ -127,7 +127,106 @@ The knowledge that one event has occurred does not change the probability that a
 Two events are independent if the probability of each event remains the same whether or not the other occurs
 
 $$
-\text{If} P(A) \neq 0 \text{and} P(B) \neq 0 \text{then} A \text{and} B \text{are independent if}
+\text{If } P(A) \neq 0 \text{ and } P(B) \neq 0 \text{ then } A \text{ and } B \text{ are independent if } \\
 P(B|A) = P(B) \\
 P(A|B) = P(A)
 $$
+
+### The Multiplication rule
+
+$$
+ P(A \cap B) = P(B)P(A|B)\\
+ P(A \cap B) = P(A)P(B|A)
+$$
+
+When two events are independent then the multiplication rules simplifies
+
+$$
+P(A \cap B) = P(A)P(B)
+$$
+
+### The law of total probability
+
+If $$A_1, \cdots , A_n$$ are mutually exclusive and exhaustive events, and $$ B $$ is any event, then
+
+$$
+P(B) = P(A_1 \cap B) + \cdots + P(A_n \caps B)
+$$
+
+Equivalently
+
+$$
+P(B) = P(B|A_1)P(A_1) + \cdots + P(B|A_1)P(A_1)
+$$
+
+
+### Bayes' Rule
+
+Rule to calculate the conditional probabilities of $$ P(B|A) $$ knowing $$ P(A|B) $$
+$$
+P(A|B) = \frac{P(B|A)P(A)}{P(B)} = \frac{P(B|A)P(A)}{P(B|A)P(A)+P(B|A^C)P(A^C)}
+$$
+
+
+## 2.4 Random Variables
+
+Assings a numerical value to each outcome in a sample space
+
+
+### Discrete variables
+
+The possible values are arranged in order, there is a gap between each value and the next one
+
+
+#### Probability mass function
+
+The probability mass function of a discrete random variable X is the function $$p(x) = P(X=x)$$. 
+Also called the probability distribution
+
+#### Cumulative distribution function
+
+Specifies the probability that a random variable is less than or equal to a given value
+$$
+F(x) = P(X \leq x)  = \sum_{t \leq x}{p(t)} = \sum_{t \leq x}{P(X=t)}
+$$
+$$
+\sum_{x}{p(x)} = \sum_{x}{p(x)} = 1
+$$
+
+#### Mean
+
+Let $$X$$ be a discrete random variable with probability mass function $$p(x)=P(X=x)$$
+
+The mean of $$X$$ is given by 
+$$
+\mu_x = \sum_{x}xP(X = x)
+$$
+Also called expectation, expected value or $$E(X)$$
+
+
+#### Standard deviation
+
+Let $$X$$ be a discrete random variable with probability mass function $$p(x)=P(X=x)$$
+
+- The variance of X is given by
+$$
+\+sigma_X^2 = \sum_{x}{(x-\mu)^2P(X=x)}
+$$
+
+- An alternative formula for the variance is given by
+
+$$
+\+sigma_X^2 = \sum_{x}{x^2P(X=x)-\mu_X^2}
+$$
+
+- The standard deviation is the square root of the variance 
+
+$$
+\sigma_X = \sqrt{\sigma_X^2}
+$$
+
+
+#### The Probability Histogram
+
+![Histogram](./data-science/imgs/probability-histogram.png)
+
