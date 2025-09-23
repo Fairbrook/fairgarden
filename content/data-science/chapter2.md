@@ -66,23 +66,25 @@ Given any experiment and any event A:
 - $$ P(A \cup B) = P(A) + P(B) - P(A \cap B) $$
 
 ## 2.2 Counting Methods
-Fundamental Principle of Counting
 
-$$k$$ operations are to be performed. If there are $$n_1$$ ways to perform the first operation, and if for each of these ways there are $$n_2$$ ways to perform the second operation, and if for each choice of ways to perform the first two operations there are $$n_3$$ ways to perform the third operation, the total number of ways to perform the sequence of $$k$$ operations is $$n_1, n_2 \cdots n_k$$
+### Fundamental Principle of Counting
+
+$$ k $$ operations are to be performed. If there are $$ n_1 $$ ways to perform the first operation, and if for each 
+of these ways there are $$ n_2 $$ ways to perform the second operation, and if for each choice of ways to perform the first two operations there are $$ n_3 $$ ways to perform the third operation, the total number of ways to perform the sequence of $$ k $$ operations is $$ n_1n_2 \cdots n_k $$
 
 ### Permutations
 
-Ordering of a collection of objects.
+Ordering of a collection of objects. 
 
-The number of permutations of $$n$$ objects is
+The number of permutations of n objects is 
 $$
 n!
 $$
+The number of permutations of k objects chosen from a group of n objecs is
+$$
+\frac{n!}{(n-k)!}
+$$
 
-The number of permutations of $$k$$ objects chosen from a group of $$n$$ objecs is
-$$
-\frac{n!}{(n−k)!}
-$$
 
 ### Combinations
 
